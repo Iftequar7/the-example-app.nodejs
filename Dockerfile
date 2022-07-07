@@ -12,7 +12,7 @@ RUN npm install
 
 #COPY . .
 
-USER node
+#USER node
 EXPOSE 3000
 CMD ["npm", "start"]
 
