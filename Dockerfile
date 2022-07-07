@@ -1,19 +1,19 @@
-FROM node:9
+FROM node:14-alpine
 
 WORKDIR /app
 
-#RUN npm install -g contentful-cli
+RUN npm install -g contentful-cli
 
-RUN npm install
+#RUN npm install
 
 COPY . /app
 #COPY package.json .
-RUN npm install
+#RUN npm install
 
 #COPY . .
 
 #USER node
 EXPOSE 3000
-CMD ["npm", "start"]
+#CMD ["npm", "start"]
 
-#CMD ["npm", "run", "start:dev"]
+CMD ["npm", "run", "start"]
